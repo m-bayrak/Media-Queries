@@ -1,9 +1,56 @@
 .semaphore {
   padding: 20px;
-  border-radius: 50px;
   background-color: #444;
+  /* border-radius: 50px; */
+  /* width: 30%; */
+  margin: auto;
+}
+
+@media { 
+  .semaphore {
+    width: 100px;
+  }
+}
+
+@media (min-width: 700px) { 
+  .semaphore {
+    width: 200px;
+  }
 }
 
 .light {
   margin-bottom: 5%;
+  padding-bottom: 100%;
+  border-radius: 50%;
 }
+
+.light--stop {
+  background-color: #400;
+}
+
+@media (max-width: 499px) { 
+  .light--stop {
+    background-color: #f00;;
+  }
+}
+
+.light--ready {
+  background-color: #440;
+}
+
+@media (min-width: 500px) and (max-width: 599px) { 
+  .light--ready {
+    background-color: #ff0;;
+  }
+}
+
+.light--go {
+  background-color: #040;
+}
+
+@media (min-width: 600px) { 
+  .light--go {
+    background-color: #0f0;;
+  }
+}
+
